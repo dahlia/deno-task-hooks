@@ -1,6 +1,6 @@
 {
   "name": "@hongminhee/deno-task-hooks",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "exports": "./install.ts",
   "imports": {
     "@std/cli": "jsr:@std/cli@^0.222.1",
