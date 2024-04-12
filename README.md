@@ -33,13 +33,13 @@ file to your *.git/hooks* directory.  Let your team members run this task
 immediately after cloning your repository.
 
 Then, you can define your Git hooks in your *deno.json* file.  All hooks are
-prefixed with `hook:` and followed by the hook name (which is kebab-cased).
+prefixed with `hooks:` and followed by the hook name (which is kebab-cased).
 For example, to define a `pre-commit` hook, you can add the following task:
 
 ~~~~ json
 {
   "tasks": {
-    "hook:pre-commit": "deno check *.ts && deno lint"
+    "hooks:pre-commit": "deno check *.ts && deno lint"
   }
 }
 ~~~~
