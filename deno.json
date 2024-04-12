@@ -1,5 +1,7 @@
 {
-  
+  "name": "@hongminhee/deno-task-hooks",
+  "version": "0.1.0",
+  "exports": "./install.ts",
   "imports": {
     "@std/cli": "jsr:@std/cli@^0.222.1",
     "@std/fmt": "jsr:@std/fmt@^0.222.1",
@@ -9,7 +11,8 @@
     "@std/path": "jsr:@std/path@^0.222.1"
   },
   "tasks": {
+    "check": "deno check *.ts && deno publish --dry-run --allow-dirty",
     "hooks:install": "deno run --allow-read=deno.json,.git/hooks/ --allow-write=.git/hooks/ install.ts",
-    "hooks:pre-commit": "deno check *.ts"
+    "hooks:pre-commit": "deno task check"
   }
 }
