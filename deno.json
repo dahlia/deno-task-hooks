@@ -11,7 +11,7 @@
     "@std/path": "jsr:@std/path@^0.222.1"
   },
   "tasks": {
-    "check": "deno check *.ts && deno publish --dry-run --allow-dirty",
+    "check": "deno check *.ts && deno lint && deno publish --dry-run --allow-dirty",
     "hooks:install": "deno run --allow-read=deno.json,.git/hooks/ --allow-write=.git/hooks/ install.ts",
     "hooks:pre-commit": "deno task check"
   }

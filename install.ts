@@ -1,7 +1,7 @@
 import { parseArgs } from "@std/cli/parse-args";
 import { bold, green, red, setColorEnabled, yellow } from "@std/fmt/colors";
 import { ensureDir } from "@std/fs/ensure-dir";
-import { JsonValue } from "@std/json/common";
+import type { JsonValue } from "@std/json/common";
 import { parse } from "@std/jsonc/parse";
 import { join } from "@std/path/join";
 
