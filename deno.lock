@@ -73,7 +73,6 @@
       "jsr:@std/cli@^0.222.1",
       "jsr:@std/fmt@^0.222.1",
       "jsr:@std/fs@^0.222.1",
-      "jsr:@std/json@^0.222.1",
       "jsr:@std/jsonc@^0.222.1",
       "jsr:@std/path@^0.222.1"
     ]
